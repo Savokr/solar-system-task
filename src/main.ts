@@ -14,6 +14,10 @@ import { Text } from 'troika-three-text';
 import { Planet } from './Planet';
 import { Orbit } from './Orbit';
 
+import sunTexture from './assets/sun_texture.jpeg';
+import earthTexture from './assets/earth_texture.jpeg';
+import moonTexture from './assets/moon_texture.jpg';
+
 
 function setupLights(scene: Scene) {
   const ambientLight = new AmbientLight('white', 0.1);
@@ -75,7 +79,7 @@ function main() {
   const sun = new Planet({
     name: 'Sun', 
     radius: sunRadius, 
-    textureSrc: './src/assets/sun_texture.jpeg', 
+    textureSrc: sunTexture, 
     rotationSpeed: sunRotationSpeed, 
     customMaterial: new MeshBasicMaterial({color: 'yellow'})});
   sun.mesh.castShadow = false;
@@ -85,14 +89,14 @@ function main() {
   const earth = new Planet({
     name: 'Earth', 
     radius: earthRadius, 
-    textureSrc: './src/assets/earth_texture.jpeg', 
+    textureSrc: earthTexture, 
     rotationSpeed: 0.01});
   earth.textObject.color = 'Aquamarine';
 
   const moon = new Planet({
     name: 'Moon', 
     radius: moonRadius, 
-    textureSrc: './src/assets/moon_texture.jpg', 
+    textureSrc: moonTexture, 
     rotationSpeed: 0})
 
   const moonOrbit = new Orbit({
