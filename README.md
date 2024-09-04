@@ -2,7 +2,7 @@
 <img width="1088" alt="image" src="https://github.com/user-attachments/assets/6414567a-4a93-4f6b-b9cf-e6c7fcbbe3df">
 
 
-When clicking on the planet, the rotation will be stopped
+Try out in the browser - [link](https://savokr.github.io/solar-system-task/). When clicking on the planet, the rotation will be stopped
 
 
 To run locally first install dependencies with 
